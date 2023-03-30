@@ -1,9 +1,10 @@
 <template>
-    <div id="background" class="h-screen bg-gradient-to-br from-yellow-400 to-pink-500 via-red-400 ">
+    <div id="background" class="h-screen bg-gradient-to-br ">
      <div class="max-w-screen-lg px-4 mx-auto">
+
+                                    
       <header class="flex items-center justify-between py-8">
           <div class="flex items-center">
-            <!-- <img src="~/assets/logo.png" alt="Weather App" class="w-8 h-8"> -->
             <h1 class="ml-2 text-2xl font-bold text-blue-300 font-display">Weather App</h1>
           </div>
           <div class="flex items-center">
@@ -13,8 +14,12 @@
             </div>
           </div>
         </header>
+
+                                   
 <div class="flex items-center justify-center py-6 text-xl " >
-  
+                          
+                          <!-- ---SEARCH--- -->
+
   <div class="flex flex-row items-center justify-center w-3/4 " >
     
     <div class="flex justify-center mt-6 mb-6">
@@ -27,10 +32,11 @@ class="w-full p-2 text-xl font-light capitalize shadow-xl focus:outline-none pla
 </div>
 
 </div>
-
+                       <!-- ---BODY--- -->
+ 
 <div id="container" class="grid grid-cols-1 gap-4 p-6 bg-white rounded-md shadow-md md:grid-cols-3">
 
-    
+                         <!-- --CONTAİNER1--- -->
   <div id="container1" class="relative flex items-start w-auto p-4 my-6 rounded-md shadow-inner h-96" >
 
     <div class="text-xl text-white">
@@ -51,7 +57,10 @@ class="w-full p-2 text-xl font-light capitalize shadow-xl focus:outline-none pla
       <span class="text-white uppercase">{{ weather.weather[0].description }}</span>
     </div>
   </div> 
-  
+
+                         <!-- --CONTAİNER2--- -->
+                                                                          
+
       <div id="container2" class="grid justify-center w-auto py-4 my-6 rounded-md col-end h-96 font-display">
               <div class="mb-2">
                 <p class="flex justify-center font-bold text-blue-900"><i id="icon" class="pr-2 fa-solid fa-feather"></i>Feels like</p>
@@ -78,6 +87,10 @@ class="w-full p-2 text-xl font-light capitalize shadow-xl focus:outline-none pla
               </div>
              
             </div> 
+
+                         <!-- --CONTAİNER3--- -->
+                             
+                                         
             <div id="container3" class="grid justify-center w-auto py-4 my-6 rounded-md font-display col-center h-96">
 <h2 class="flex items-center justify-center mb-2 text-xl font-medium">Weekly Forecast</h2>
 
@@ -276,19 +289,13 @@ li {
 
 }
 #container2{
-  /* background-image: url('https://img.freepik.com/free-vector/cloud-with-falling-rain-drops-papercur-style-background_1017-32359.jpg?w=2000'); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+ 
 	cursor: pointer;
   transition: 1s ease;
 
 }
 #container3{
-  /* background-image: url('https://img.freepik.com/free-vector/flat-design-monsoon-season-clouds-illustration_23-2149424294.jpg?w=2000'); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+ 
 	cursor: pointer;
   transition: 1s ease;
 
