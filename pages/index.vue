@@ -131,6 +131,7 @@ export default {
    },
   data(){
     return{
+      
       city:"",
       weather: {},
       weeklyForecast: null,
