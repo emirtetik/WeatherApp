@@ -1,5 +1,5 @@
 # weather-app
-![Proje resmi](\assets\images\weather.jpg)
+![Proje resmi](assets/images/weather.jpg)
 ## Build Setup
 
 ```bash
